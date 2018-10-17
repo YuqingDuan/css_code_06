@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS复杂滑动门</title>
+	<style type="text/css">
+		/*格式清空*/
+		body,ul,li{
+			margin: 0;
+			padding: 0;
+		}
+		/*格式清空*/
+		ul{
+			list-style: none;
+		}
+		li{
+			/*让li浮动起来,使得三个li在同一行显示*/
+			float: left;
+			/*图片35px*7px*/
+			height: 35px;
+		}
+
+		a{
+			/*去掉下划线*/
+			text-decoration: none;
+			/*定义背景, 且不平铺*/
+			background: url("bg_r1_c1.png") no-repeat;
+			/*先转行内块*/
+			display: inline-block;
+			/*再定义宽和高*/
+			height: 35px;
+			/*把文字往右边挤一挤*/
+			padding-left: 7px;
+			/*文字颜色*/
+			color: #fff;
+		}
+		span{
+			/*先转行内块*/
+			display: inline-block;
+			/*再定义高, 不定义宽度, 让span可以被内容撑大*/
+			height: 35px;
+			/*文字行高和span标签一样,使得文字垂直居中*/
+			line-height: 35px;
+			/*设置背景从右边开始显示*/
+			background: url("bg_r1_c2.png") right;
+			/*把文字往左边挤一挤*/
+			padding-right: 25px;
+		}
+		
+		/*链接伪类*/
+		a:hover{
+			background: url("blue_r1_c1.png");
+		}
+		/*链接伪类*/
+		a span:hover{
+			background: url("blue_r1_c2.png") right;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#"><span>滑动门</span></a></li>
+		<li><a href="#"><span>门</span></a></li>
+		<li><a href="#"><span>复杂滑动门</span></a></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <style>
+              .one{
+              	 width:10px;
+              	 height:100px;
+              	 background-image:url(l.png);
+              	 float:left;
+              }
+              .tree{
+              	 width:10px;
+              	 height:100px;
+              	 background-image:url(r.png);
+              	 float:left;
+              }
+              .two{     	 
+              	 height:100px;
+              	 background-image:url(m.png);
+              	 background-repeat:repeat-x;
+
+              	 /*浮动后相当于行内块元素, 宽度由内容撑开*/
+              	 float:left;
+              	 
+              	 /*文字行高和div标签一样,使得文字垂直居中*/
+                 line-height: 100px;
+              }
+        </style>
+    </head>
+    <body>
+          <div class="one"></div>
+          <div class="two">CSS简单滑动门</div>
+          <div class="tree"></div>
+    </body>
+</html>
